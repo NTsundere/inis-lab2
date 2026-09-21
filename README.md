@@ -1,8 +1,31 @@
-# React + Vite
+Agrodnevnik Landing — Лабораторная работа №2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React-приложение (Vite) с компонентной архитектурой, JSX, props и локальным состоянием (`useState`).
 
-Currently, two official plugins are available:
+Запуск
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+npm install
+npm run dev
+
+Откройте http://localhost:5173
+Компоненты
+
+    Button — props: children, variant, type, onClick, disabled.
+
+    StatusBadge — props: status.
+
+    FieldCard — props: title, crop, moisture, status, onDetails.
+
+    InputField — props: label, placeholder, type, hasError, onChange. Локальное состояние: value.
+
+    Accordion — props: title, children, defaultOpen. Локальное состояние: isOpen.
+
+Требования
+
+    Только функциональные компоненты + хуки.
+
+    Валидация props через PropTypes.
+
+    CSS Modules для стилей.
+
+    Состояние — только useState.
