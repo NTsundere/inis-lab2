@@ -1,0 +1,121 @@
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+}
+
+.nav a {
+  color: var(--color-gray-600);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.nav a:hover { color: var(--color-primary); }
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+  border-radius: var(--radius-lg);
+  margin: 24px 0;
+}
+
+.hero h1 { margin-bottom: 16px; }
+
+.hero p {
+  font-size: 18px;
+  color: var(--color-gray-600);
+  margin: 0 0 24px;
+}
+
+.section {
+  padding: 40px 0;
+  border-top: 1px dashed var(--color-gray-200);
+}
+
+.sectionTitle {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  color: var(--color-gray-600);
+  margin: -12px 0 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.forecast {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.forecastRow {
+  padding: 16px 20px;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-sm);
+}
+
+.forecastHeader {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.temp { color: var(--color-primary); }
+
+.forecastMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 13px;
+  color: var(--color-gray-600);
+}
+
+.form {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  margin-top: 40px;
+  border-top: 1px solid var(--color-gray-200);
+  font-size: 14px;
+  color: var(--color-gray-600);
+}
